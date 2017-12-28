@@ -13,11 +13,39 @@ h1:before {
     content: "// ";
 }
 
+h2 {
+    color: #EF5147;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 15px;
+}
+
+h2:before {
+    content: "function ";
+}
+
+h2:after {
+    content: "() {";
+}
+
 p {
     color: #d2d2d2;
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
     margin-bottom: 25px;
+}
+
+h2 + p {
+    margin-left: 40px;
+}
+
+h2 + p:after {
+    content: "\a}";
+    color: #EF5147;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+    display: block;
+    margin-left: 0;
 }
 
 li {
@@ -46,7 +74,7 @@ ul {
 }
 
 strong {
-    color: #4dd2ac;
+    color: #ea7132;
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
     font-weight: normal;
@@ -56,5 +84,5 @@ i {
     color: #fca8a1;
     font-size: 14px;
     margin-right: 15px;
-    opacity: .3;
+    opacity: .8;
 }
