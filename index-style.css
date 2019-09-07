@@ -1,0 +1,60 @@
+#square {
+    width: 100px;
+    height: 100px;
+    background: white;
+}
+
+#circle {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    animation-delay: .2s;
+}
+
+#triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid white;
+    animation-delay: .4s;
+}
+
+#rectangle {
+    width: 100px;
+    height: 20px;
+    background: white;
+    margin-top:80px;
+    animation-delay: .6s;
+}
+
+body {
+    background: #cb2d3e; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+}
+
+.row, .container {
+    height: 90%;
+}
+
+.shape {
+    display: inline-block;
+}
+
+.shape:hover {
+    -webkit-animation: swing 1s;
+    animation: swing 1s;
+    animation-delay: 0s !important;
+}
+
+.shape-container {
+    text-align: center;
+    margin: auto;
+}

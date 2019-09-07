@@ -1,9 +1,14 @@
-var myModule = (function() {
+let HomePage = (function ($) {
     'use strict';
 
+    function init() {
+
+        setTimeout(function () {
+            $(".shape").removeClass("jackInTheBox");
+        }, 1200);
+    }
+
     return {
-        publicMethod: function() {
-            console.log('Hello World!');
-        }
+        init: init
     };
-}());
+}(jQuery));
