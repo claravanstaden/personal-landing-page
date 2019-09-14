@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Clara van Staden</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="landing/index-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Code+Pro" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -23,27 +22,49 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="landing/index.js"></script>
+
 
 </head>
 <body>
+<div id="photo">
+    <h1>Clara van Staden</h1>
+    <h3>Software Engineer. Artist. Thinker.</h3>
+</div>
 <div class="container">
-    <div class="row align-items-center">
-        <div class="col shape-container">
-            <div id="square" class="shape animated jackInTheBox"></div>
+    <div class="row align-items-center" id="blog">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 shape-container">
+            <a href="http://blog.claravanstaden.com" target="_blank">
+                <div id="square" class="shape shape-red animated jackInTheBox"></div>
+                <h2 class="animated bounceIn left-text-color">Contemplate</h2>
+            </a>
         </div>
-        <div class="col shape-container">
-            <div id="triangle-up" class="shape animated jackInTheBox"></div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 shape-container" id="art">
+            <a href="https://www.instagram.com/clara.create" target="_blank">
+                <div id="triangle-up" class="shape shape-red animated jackInTheBox"></div>
+                <h2 class="animated bounceIn left-text-color">Create</h2>
+            </a>
         </div>
-        <div class="col shape-container">
-            <div id="circle" class="shape animated jackInTheBox"></div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 shape-container" id="code">
+            <a href="https://github.com/claravanstaden" target="_blank">
+                <div id="rectangle" class="shape shape-gray animated jackInTheBox"></div>
+                <h2 class="animated bounceIn right-text-color">Code
+                </h2>
+            </a>
         </div>
-        <div class="col shape-container">
-            <div id="rectangle" class="shape animated jackInTheBox"></div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 shape-container" id="bio">
+            <a href="bio/short-bio.html" target="_blank">
+                <div id="circle" class="shape shape-gray animated jackInTheBox"></div>
+                <h2 class="animated bounceIn right-text-color">TL;DR
+                </h2>
+            </a>
         </div>
     </div>
 </div>
 </body>
+<footer>
+    © Clara van Staden <span class="year"></span>
+</footer>
 
 <script>
     jQuery(document).ready(function () {
